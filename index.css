@@ -61,6 +61,8 @@ button {
 
 button:hover{
     background-color: #126f50;
+    word-break: break-all;
+    padding-right: 1rem;
 }
 
 .task-added {
