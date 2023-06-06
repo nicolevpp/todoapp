@@ -1,0 +1,142 @@
+body {
+    background-color: #0f172a ;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    /* margin: 0;
+    min-width: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 0; */
+}
+
+h1 {
+    text-align: center;
+}
+
+#list-container {
+    background-color: #1f2937;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: auto;
+    min-height: 10rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+input {
+    width: 17.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #374151;
+    color: white;
+    padding: 0 1rem;
+}
+
+
+input:focus{
+    outline: 2px solid #8b5cf6;
+}
+
+button {
+    background-color: #10b981;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #126f50;
+}
+
+.task-added {
+    width: 17.5rem;
+    overflow: auto;
+}
+
+.check-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #bef264;
+}
+
+.delete-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: #ef4444;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+#contadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.total-all {
+    background-color: #8b5cf6;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.completed-all {
+    background-color: #15803d;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.pending-all {
+    background-color: #ef4444;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.completado {
+    background-color: #374151;
+    border-radius: 0.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #list-container {
+      width: 40rem;
+    }
+
+    input {
+        width: 30rem;
+    }
+
+    .task-added {
+        width: 32rem;
+    }
+  }
